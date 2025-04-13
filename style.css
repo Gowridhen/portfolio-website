@@ -480,7 +480,7 @@ body {
 }
 
 .build-section:hover {
-  background: linear-gradient(135deg, #e0f7fa, #f3f4f6);
+  background: #f0f8ff; 
 }
 
 .build-section .btn {

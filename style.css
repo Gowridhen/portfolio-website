@@ -18,6 +18,13 @@
   transition: all 0.3s ease;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
   outline: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-buttons button i {
+  font-size: 16px;
 }
 
 .filter-buttons button:hover,
@@ -28,20 +35,12 @@
   transform: translateY(-2px);
 }
 
-/* Dark mode support */
+/* Dark mode styles */
 body.dark-mode .filter-buttons button {
   --btn-bg: #333;
   --btn-color: #f0f0f0;
   border: 1px solid #555;
 }
-
-body.dark-mode .filter-buttons button:hover,
-body.dark-mode .filter-buttons button.active {
-  background-color: #ff5722;
-  color: #fff;
-  box-shadow: 0 6px 12px rgba(255, 87, 34, 0.3);
-}
-
 /* General Reset */
 * {
   margin: 0;

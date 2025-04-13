@@ -1,39 +1,80 @@
-document.addEventListener('DOMContentLoaded', () => {
-  AOS.init({
-    once: true,
-    duration: 1000
-  });
+// typewriter.js
 
-  const bars = document.querySelectorAll('.bar-fill');
-  bars.forEach(bar => {
-    const width = bar.style.width;
-    bar.style.width = 0;
-    setTimeout(() => {
-      bar.style.width = width;
-    }, 500);
-  });
-});
+const words = ["a Web Developer", "a UI/UX Designer", "a Problem Solver"];
+let currentWordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typewriter = document.getElementById("typewriter");
 
-document.getElementById('theme1').addEventListener('click', () => {
-  document.body.classList.remove('dark-mode', 'light-mode');
-  document.body.classList.add('blue-theme');
-});
+function type() {
+  const currentWord = words[currentWordIndex];
+  const displayed = isDeleting
+    ? currentWord.substring(0, charIndex--)
+    : currentWord.substring(0, charIndex++);
 
-document.getElementById('theme2').addEventListener('click', () => {
-  document.body.classList.remove('blue-theme', 'light-mode');
-  document.body.classList.add('dark-mode');
-});
+  typewriter.textContent = displayed;
 
-document.getElementById('theme3').addEventListener('click', () => {
-  document.body.classList.remove('blue-theme', 'dark-mode');
-  document.body.classList.add('light-mode');
-});
-window.addEventListener('scroll', function() {
-  const scrollTopBtn = document.getElementById('scrollToTop');
-  if (document.documentElement.scrollTop > 300) {
-    scrollTopBtn.style.display = 'block';
+  if (!isDeleting && charIndex === currentWord.length + 1) {
+    isDeleting = true;
+    setTimeout(type, 1000);
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    currentWordIndex = (currentWordIndex + 1) % words.length;
+    setTimeout(type, 300);
   } else {
-    scrollTopBtn.style.display = 'none';
+    setTimeout(type, isDeleting ? 50 : 100);
   }
+}
+
+document.addEventListener("DOMContentLoaded", type);
+
+
+// darkmode.js
+
+const toggle = document.getElementById("darkModeToggle");
+const body = document.body;
+
+toggle.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+  toggle.textContent = body.classList.contains("dark-mode") ? "🌞" : "🌙";
 });
 
+
+// scrolltotop.js
+
+const scrollBtn = document.getElementById("scrollToTop");
+
+window.addEventListener("scroll", () => {
+  scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// projectfilter.js
+
+const filterButtons = document.querySelectorAll(".filter-buttons button");
+const projectCards = document.querySelectorAll(".project-card");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.getAttribute("data-filter");
+
+    projectCards.forEach((card) => {
+      const category = card.getAttribute("data-category");
+      card.style.display = filter === "all" || category === filter ? "block" : "none";
+    });
+
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+  });
+});
+
+// aos-init.js
+
+AOS.init({
+  duration: 800,
+  easing: "ease-in-out",
+  once: true,
+});

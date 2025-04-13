@@ -473,5 +473,15 @@ filter-buttons {
 [data-tooltip]:hover::after {
   opacity: 1;
 }
+#typewriter::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
 
-
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

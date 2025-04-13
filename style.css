@@ -226,3 +226,15 @@ footer p {
 .dark-mode .socials a {
   color: #fff;
 }
+
+.socials a {
+  font-size: 2em;
+  margin: 0 20px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ff5722;
+  transform: scale(1.2);
+}

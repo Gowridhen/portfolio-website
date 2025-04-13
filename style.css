@@ -526,19 +526,6 @@ filter-buttons {
   margin: 2rem 0;
 }
 
-<!-- Build Your Portfolio Section -->
-<section id="build">
-  <div class="container" data-aos="fade-up">
-    <h2>Create Your Own Portfolio 🚀</h2>
-    <p>Want a portfolio like this? Fork the template and make it yours in minutes!</p>
-    <a href="https://github.com/yourusername/your-repo-name/generate" target="_blank" class="btn">
-      <i class="fab fa-github"></i> Use This Template
-    </a>
-    <p style="margin-top: 20px;">Need help getting started? 
-      <a href="https://github.com/yourusername/your-repo-name#readme" target="_blank">Check the docs</a>.
-    </p>
-  </div>
-</section>
 /* Add to your CSS */
 .skill-bar {
   background-color: #eee;

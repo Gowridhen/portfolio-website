@@ -337,3 +337,21 @@ build {
 .dark-mode #build .btn:hover {
   background-color: #ddd;
 }
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  display: none;
+  font-size: 24px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ff5722;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+#scrollTopBtn:hover {
+  background-color: #e64a19;
+}

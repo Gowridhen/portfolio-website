@@ -3,86 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Your Name | Portfolio</title>
 
-  <!-- Google Fonts -->
+  <!-- Fonts and Libraries -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- AOS Animation CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-
-  <!-- Your main CSS -->
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Smooth Scroll -->
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  <style>html { scroll-behavior: smooth; }</style>
 </head>
 <body>
+
   <!-- Header -->
   <header>
     <div class="container">
       <h1>Your Name</h1>
       <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+        <a href="#hero"><i class="fas fa-house"></i> Home</a>
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+        <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="resume.pdf" target="_blank" class="btn-resume"><i class="fas fa-download"></i> Resume</a>
+        <button id="darkModeToggle">🌙</button>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="container">
-      <h2>Hello, I'm Your Name 👋</h2>
-      <p>I create websites that are fast, beautiful, and user-friendly.</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <h2>Hello, I'm <span class="highlight">Your Name</span> 👋</h2>
+      <p>Creative Developer | UI/UX Designer | Problem Solver</p>
+      <a href="#projects" class="btn">Explore Projects</a>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>I'm a web developer passionate about building responsive and engaging websites. I love combining clean design with powerful code to create seamless user experiences.</p>
+      <p>I’m a passionate web developer who loves turning ideas into reality using code. I focus on crafting clean, engaging, and performant web experiences.</p>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript & TypeScript</li>
+        <li>React / Vue / Next.js</li>
+        <li>Node.js / Express</li>
+        <li>MongoDB / Firebase</li>
+        <li>Git & GitHub</li>
+        <li>Figma / UI Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-grid">
         <div class="project-card" data-aos="fade-up">
-          <h3>Project One</h3>
-          <p>Short description of your awesome project.</p>
-          <a href="#">View Demo</a>
+          <h3>Portfolio Website</h3>
+          <p>Responsive personal site built with HTML, CSS, and AOS.</p>
+          <a href="#">Live Demo</a>
         </div>
         <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <h3>Project Two</h3>
-          <p>Another cool thing you built with love and code.</p>
-          <a href="#">View on GitHub</a>
+          <h3>Weather App</h3>
+          <p>Shows real-time weather data using OpenWeatherMap API.</p>
+          <a href="#">GitHub</a>
         </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <h3>ToDo List</h3>
+          <p>Classic CRUD app with localStorage and animations.</p>
+          <a href="#">View App</a>
+        </div>
+        <!-- Add more projects below as needed -->
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <h2>Contact Me</h2>
+      <p>Let's collaborate or chat! Email me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
       <div class="socials">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://dev.to/yourusername" target="_blank"><i class="fab fa-dev"></i></a>
       </div>
     </div>
   </section>
@@ -90,22 +107,31 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Your Name. All rights reserved.</p>
+      <p>&copy; 2025 Your Name. Built with 💙</p>
     </div>
   </footer>
 
-  <!-- AOS Script -->
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- AOS + Dark Mode + Scroll -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
-
-  <!-- Dark Mode Toggle Script -->
   <script>
-    const toggleButton = document.getElementById('darkModeToggle');
-    const body = document.body;
+    AOS.init();
 
-    toggleButton.addEventListener('click', () => {
+    const toggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    toggle.addEventListener('click', () => {
       body.classList.toggle('dark-mode');
-      toggleButton.textContent = body.classList.contains('dark-mode') ? '🌞' : '🌙';
+      toggle.textContent = body.classList.contains('dark-mode') ? '🌞' : '🌙';
+    });
+
+    const scrollBtn = document.getElementById('scrollToTop');
+    window.addEventListener('scroll', () => {
+      scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>

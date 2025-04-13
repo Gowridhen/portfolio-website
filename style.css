@@ -525,7 +525,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background: #333; /* 🔁 Changed background from #111 */
-  color: #fff;
+  color: #000000
   padding: 6px 10px;
   border-radius: 4px;
   white-space: nowrap;

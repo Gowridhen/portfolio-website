@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!-- Add AOS CSS link here -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <!-- Your other CSS files, like style.css -->
+  <link rel="stylesheet" href="style.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
@@ -47,16 +52,16 @@
   </section>
 
   <!-- Projects Section -->
- <section id="projects">
+<section id="projects">
   <div class="container">
     <h2>Projects</h2>
     <div class="project-grid">
-     <div class="project-card" data-aos="fade-up">
+      <div class="project-card" data-aos="fade-up">
         <h3>Project One</h3>
         <p>Short description of your awesome project.</p>
         <a href="#">View Demo</a>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
         <h3>Project Two</h3>
         <p>Another cool thing you built with love and code.</p>
         <a href="#">View on GitHub</a>
@@ -65,8 +70,7 @@
   </div>
 </section>
 
-
-  <!-- Contact Section -->
+ <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <h2>Contact</h2>
@@ -89,5 +93,11 @@
 <script>
   AOS.init();
 </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

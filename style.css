@@ -157,3 +157,35 @@ footer {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #000dff;
+  font-weight: bold;
+}

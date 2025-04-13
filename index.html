@@ -35,7 +35,7 @@
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="container">
-      <h2>Hello, I'm <span class="highlight">Your Name</span> 👋</h2>
+      <h2>Hello, I'm <span id="typewriter"></span> 👋</h2>
       <p>Creative Developer | UI/UX Designer | Problem Solver</p>
       <a href="#projects" class="btn">Explore Projects</a>
     </div>
@@ -145,5 +145,37 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
+  <script>
+  const roles = ["a Web Developer", "a Designer", "a Creator"];
+  let i = 0, j = 0, current = "", isDeleting = false;
+
+  function type() {
+    if (i < roles.length) {
+      let fullText = roles[i];
+
+      if (isDeleting) {
+        current = fullText.substring(0, j--);
+      } else {
+        current = fullText.substring(0, j++);
+      }
+
+      document.getElementById("typewriter").textContent = current;
+
+      if (!isDeleting && j === fullText.length) {
+        isDeleting = true;
+        setTimeout(type, 1200);
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % roles.length;
+        setTimeout(type, 400);
+      } else {
+        setTimeout(type, isDeleting ? 60 : 100);
+      }
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", type);
+</script>
+
 </body>
 </html>

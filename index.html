@@ -108,6 +108,54 @@
     </div>
   </section>
 
+  <section id="code-snippets">
+  <div class="container" data-aos="fade-up">
+    <h2>Code Snippets for Your Portfolio</h2>
+    <p>Here are some helpful code snippets to enhance your portfolio!</p>
+
+    <h3>1. Adding a Contact Form</h3>
+    <pre><code>
+&lt;form action="mailto:your.email@example.com" method="post"&gt;
+  &lt;input type="text" name="name" placeholder="Your Name"&gt;
+  &lt;input type="email" name="email" placeholder="Your Email"&gt;
+  &lt;textarea name="message" placeholder="Your Message"&gt;&lt;/textarea&gt;
+  &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+&lt;/form&gt;
+    </code></pre>
+
+    <h3>2. Adding AOS Animations</h3>
+    <pre><code>
+<!-- Include the AOS Library -->
+&lt;link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"&gt;&lt;/script&gt;
+
+<!-- Add data-aos attribute to your elements -->
+&lt;div data-aos="fade-up"&gt;Your animated content here&lt;/div&gt;
+
+<!-- Initialize AOS -->
+&lt;script&gt;
+  AOS.init();
+&lt;/script&gt;
+    </code></pre>
+
+    <h3>3. Dark Mode Toggle</h3>
+    <pre><code>
+<!-- Button to toggle dark mode -->
+&lt;button id="darkModeToggle"&gt;🌙&lt;/button&gt;
+
+<script>
+  const toggle = document.getElementById('darkModeToggle');
+  const body = document.body;
+  toggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    toggle.textContent = body.classList.contains('dark-mode') ? '🌞' : '🌙';
+  });
+</script>
+    </code></pre>
+  </div>
+</section>
+
+
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">

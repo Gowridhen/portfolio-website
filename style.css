@@ -1,3 +1,69 @@
+/* Add styles for Getting Started Steps */
+.getting-started {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.getting-started h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.getting-started ol {
+  margin-left: 20px;
+}
+
+.getting-started li {
+  margin-bottom: 10px;
+}
+
+/* Add styles for Theme Preview */
+.theme-preview {
+  margin-top: 30px;
+}
+
+.theme-preview .btn {
+  margin-right: 10px;
+}
+
+.theme-btn {
+  background-color: #007cf0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.theme-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Button for Demo Preview */
+.btn {
+  background-color: #00dfd8;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #007cf0;
+}
+
+.theme-btn {
+  background-color: #00dfd8;
+}
+
+.theme-btn:hover {
+  background-color: #007cf0;
+}
+
 .filter-buttons {
   display: flex;
   justify-content: center;

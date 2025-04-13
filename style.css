@@ -440,4 +440,21 @@ filter-buttons {
     </p>
   </div>
 </section>
+/* Add to your CSS */
+.skill-bar {
+  background-color: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.bar-fill {
+  height: 20px;
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  width: 0;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 20px;
+  transition: width 2s ease-in-out;
+}
 

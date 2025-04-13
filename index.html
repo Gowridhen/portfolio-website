@@ -39,10 +39,10 @@
       <p>Creative Developer | UI/UX Designer | Problem Solver</p>
       <a href="#projects" class="btn">Explore Projects</a>
       <a href="https://github.com/yourusername/your-repo-name" target="_blank">
-  <img style="position: absolute; top: 0; right: 0; border: 0;" 
-       src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" 
-       alt="Fork me on GitHub">
-</a>
+        <img style="position: absolute; top: 0; right: 0; border: 0;" 
+             src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" 
+             alt="Fork me on GitHub">
+      </a>
     </div>
   </section>
 
@@ -59,11 +59,11 @@
     <div class="container">
       <h2>Skills</h2>
       <div class="skill">
-  <p>HTML</p>
-  <div class="skill-bar">
-    <div class="bar-fill" style="width: 90%;">90%</div>
-  </div>
-</div>
+        <p>HTML</p>
+        <div class="skill-bar">
+          <div class="bar-fill" style="width: 90%;">90%</div>
+        </div>
+      </div>
       <ul class="skills-list">
         <li>HTML5 & CSS3</li>
         <li>JavaScript & TypeScript</li>
@@ -80,118 +80,47 @@
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
-          <!-- 🔍 Filter Buttons go here -->
-   <div class="filter-buttons">
-  <button data-filter="all" class="active"><i class="fas fa-layer-group"></i> All</button>
-  <button data-filter="web"><i class="fas fa-globe"></i> Web</button>
-  <button data-filter="design"><i class="fas fa-palette"></i> Design</button>
-</div>
-    <div class="project-card" data-aos="fade-up" data-category="web">
-  <h3>Portfolio Website</h3>
-  <p>Responsive personal site built with HTML, CSS, and AOS.</p>
-  <a href="#">Live Demo</a>
-</div>
+      <!-- 🔍 Filter Buttons go here -->
+      <div class="filter-buttons">
+        <button data-filter="all" class="active"><i class="fas fa-layer-group"></i> All</button>
+        <button data-filter="web"><i class="fas fa-globe"></i> Web</button>
+        <button data-filter="design"><i class="fas fa-palette"></i> Design</button>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-category="web">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal site built with HTML, CSS, and AOS.</p>
+        <a href="#">Live Demo</a>
+      </div>
 
-<div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="web">
-  <h3>Weather App</h3>
-  <p>Shows real-time weather data using OpenWeatherMap API.</p>
-  <a href="#">GitHub</a>
-</div>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="web">
+        <h3>Weather App</h3>
+        <p>Shows real-time weather data using OpenWeatherMap API.</p>
+        <a href="#">GitHub</a>
+      </div>
 
-<div class="project-card" data-aos="fade-up" data-aos-delay="200" data-category="design">
-  <h3>ToDo List</h3>
-  <p>Classic CRUD app with localStorage and animations.</p>
-  <a href="#">View App</a>
-</div>
-        <!-- Add more projects below as needed -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-category="design">
+        <h3>ToDo List</h3>
+        <p>Classic CRUD app with localStorage and animations.</p>
+        <a href="#">View App</a>
       </div>
     </div>
   </section>
 
   <section id="code-snippets">
-  <div class="container" data-aos="fade-up">
-    <h2>Code Snippets for Your Portfolio</h2>
-    <p>Here are some helpful code snippets to enhance your portfolio!</p>
-
-    <h3>1. Adding a Contact Form</h3>
-    <pre><code>
-&lt;form action="mailto:your.email@example.com" method="post"&gt;
-  &lt;input type="text" name="name" placeholder="Your Name"&gt;
-  &lt;input type="email" name="email" placeholder="Your Email"&gt;
-  &lt;textarea name="message" placeholder="Your Message"&gt;&lt;/textarea&gt;
-  &lt;button type="submit"&gt;Send Message&lt;/button&gt;
-&lt;/form&gt;
-    </code></pre>
-
-    <h3>2. Adding AOS Animations</h3>
-    <pre><code>
-<!-- Include the AOS Library -->
-&lt;link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"&gt;
-&lt;script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"&gt;&lt;/script&gt;
-
-<!-- Add data-aos attribute to your elements -->
-&lt;div data-aos="fade-up"&gt;Your animated content here&lt;/div&gt;
-
-<!-- Initialize AOS -->
-&lt;script&gt;
-  AOS.init();
-&lt;/script&gt;
-    </code></pre>
-
-    <h3>3. Dark Mode Toggle</h3>
-    <pre><code>
-<!-- Button to toggle dark mode -->
-&lt;button id="darkModeToggle"&gt;🌙&lt;/button&gt;
-
-<script>
-  const toggle = document.getElementById('darkModeToggle');
-  const body = document.body;
-  toggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    toggle.textContent = body.classList.contains('dark-mode') ? '🌞' : '🌙';
-  });
-</script>
-    </code></pre>
-  </div>
-</section>
+    <div class="container" data-aos="fade-up">
+      <h2>Code Snippets for Your Portfolio</h2>
+      <p>Here are some helpful code snippets to enhance your portfolio!</p>
+      <!-- Code snippets go here -->
+    </div>
+  </section>
 
   <section id="deploying">
-  <div class="container" data-aos="fade-up">
-    <h2>How to Deploy Your Portfolio</h2>
-    <p>Here’s how you can deploy your portfolio online with popular platforms:</p>
-
-    <h3>1. Deploying with GitHub Pages</h3>
-    <ol>
-      <li>Push your portfolio code to a GitHub repository.</li>
-      <li>Go to your repository’s settings.</li>
-      <li>Scroll down to the "GitHub Pages" section.</li>
-      <li>Select "main" branch and click "Save".</li>
-      <li>Your portfolio will be available at <code>https://username.github.io/repository-name/</code></li>
-    </ol>
-
-    <h3>2. Deploying with Netlify</h3>
-    <ol>
-      <li>Sign up for a free account at <a href="https://www.netlify.com/" target="_blank">Netlify</a>.</li>
-      <li>Click on the "New Site from Git" button.</li>
-      <li>Choose GitHub as your provider and authorize Netlify.</li>
-      <li>Select the repository containing your portfolio code.</li>
-      <li>Click on "Deploy Site".</li>
-      <li>Your portfolio will be live on a Netlify URL (e.g., <code>https://your-site-name.netlify.app/</code>).</li>
-    </ol>
-
-    <h3>3. Deploying with Vercel</h3>
-    <ol>
-      <li>Sign up for a free account at <a href="https://vercel.com" target="_blank">Vercel</a>.</li>
-      <li>Click on the "New Project" button.</li>
-      <li>Link your GitHub account and select the repository with your portfolio.</li>
-      <li>Click "Deploy".</li>
-      <li>Your portfolio will be available on a Vercel URL (e.g., <code>https://your-project-name.vercel.app/</code>).</li>
-    </ol>
-
-    <p>All of these platforms provide free hosting, and they automatically deploy when you push new changes to your repository!</p>
-  </div>
-</section>
-
+    <div class="container" data-aos="fade-up">
+      <h2>How to Deploy Your Portfolio</h2>
+      <p>Here’s how you can deploy your portfolio online with popular platforms:</p>
+      <!-- Deployment steps go here -->
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact">
@@ -212,51 +141,6 @@
     <div class="container">
       <p>&copy; 2025 Your Name. Built with 💙</p>
     </div>
-    <!-- Build Your Portfolio Section -->
-<!-- Build Your Portfolio Section -->
-<section id="build">
-   <div class="container" data-aos="fade-up">
-    <h2>Create Your Own Portfolio 🚀</h2>
-    <p>Want a portfolio like this? Fork the template and make it yours in minutes!</p>
-    <a href="https://github.com/Gowridhen/portfolio-website/generate" target="_blank" class="btn">
-      <i class="fab fa-github"></i> Use This Template
-    </a>
-       <p style="margin-top: 20px;">Need help getting started? 
-      <a href="https://github.com/Gowridhen/portfolio-website#readme" target="_blank">Check the docs</a>.
-    </p>
-  </div>
-
-    <!-- Live Demo Link -->
-    <p>Check out a live demo of the portfolio template before you fork it:</p>
-    <a href="https://your-live-demo-link.com" target="_blank" class="btn">
-      <i class="fas fa-eye"></i> Live Demo
-    </a>
-    
-    <p style="margin-top: 20px;">Need help getting started? 
-      <a href="https://github.com/yourusername/your-repo-name#readme" target="_blank">Check the docs</a>.
-    </p>
-
-    <!-- Getting Started Steps -->
-    <div class="getting-started">
-      <h3>Getting Started with Your Portfolio</h3>
-      <ol>
-        <li>Fork this repository to your GitHub account.</li>
-        <li>Clone the repository to your local machine using <code>git clone</code>.</li>
-        <li>Customize your personal information like name, bio, and projects.</li>
-        <li>Push your changes back to GitHub and deploy using GitHub Pages or any hosting platform.</li>
-        <li>Update your resume and social links!</li>
-      </ol>
-    </div>
-    
-    <!-- Custom Themes or Styles Preview -->
-    <p style="margin-top: 20px;">Want to see different themes? Explore custom styles for your portfolio.</p>
-    <div class="theme-preview">
-      <button class="btn theme-btn" id="theme1">Blue Theme</button>
-      <button class="btn theme-btn" id="theme2">Dark Mode</button>
-      <button class="btn theme-btn" id="theme3">Light Mode</button>
-    </div>
-  </div>
-</section>
   </footer>
 
   <!-- Scroll to Top Button -->
@@ -274,6 +158,7 @@
       toggle.textContent = body.classList.contains('dark-mode') ? '🌞' : '🌙';
     });
 
+    // Scroll to Top button
     const scrollBtn = document.getElementById('scrollToTop');
     window.addEventListener('scroll', () => {
       scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
@@ -281,68 +166,26 @@
     scrollBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-  </script>
-  <script>
-  const roles = ["a Web Developer", "a Designer", "a Creator"];
-  let i = 0, j = 0, current = "", isDeleting = false;
 
-  function type() {
-    if (i < roles.length) {
-      let fullText = roles[i];
+    // Filter functionality for project categories
+    const filterButtons = document.querySelectorAll('.filter-buttons button');
+    const projectCards = document.querySelectorAll('.project-card');
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        projectCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || filter === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
 
-      if (isDeleting) {
-        current = fullText.substring(0, j--);
-      } else {
-        current = fullText.substring(0, j++);
-      }
-
-      document.getElementById("typewriter").textContent = current;
-
-      if (!isDeleting && j === fullText.length) {
-        isDeleting = true;
-        setTimeout(type, 1200);
-      } else if (isDeleting && j === 0) {
-        isDeleting = false;
-        i = (i + 1) % roles.length;
-        setTimeout(type, 400);
-      } else {
-        setTimeout(type, isDeleting ? 60 : 100);
-      }
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", type);
-</script>
-<script>
-  const scrollBtn = document.getElementById("scrollTopBtn");
-  window.onscroll = () => {
-    scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
-  };
-  scrollBtn.onclick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-</script>
-  <script>
-  const filterButtons = document.querySelectorAll('.filter-buttons button');
-  const projectCards = document.querySelectorAll('.project-card');
-
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const filter = button.getAttribute('data-filter');
-
-      projectCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filter === 'all' || filter === category) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
       });
-
-      filterButtons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
     });
-  });
-</script>
+  </script>
 </body>
 </html>

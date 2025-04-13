@@ -21,6 +21,16 @@
       scroll-behavior: smooth;
     }
   </style>
+     <div class="container">
+    <h1>Your Name</h1>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+  </div>
+
 </head>
 <body>
   <header>
@@ -99,5 +109,14 @@
   <script>
     AOS.init();
   </script>
+   <script>
+  const toggleButton = document.getElementById('darkModeToggle');
+  const body = document.body;
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    toggleButton.textContent = body.classList.contains('dark-mode') ? '🌞' : '🌙';
+  });
+</script>
 </body>
 </html>

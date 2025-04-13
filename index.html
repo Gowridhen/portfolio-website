@@ -113,6 +113,13 @@
     <div class="container">
       <h2>Contact Me</h2>
       <p>Let's collaborate or chat! Email me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <form id="contactForm">
+  <input type="text" id="name" placeholder="Your Name" required />
+  <input type="email" id="email" placeholder="Your Email" required />
+  <textarea id="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+<p id="formStatus"></p>
       <div class="socials">
         <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -228,6 +235,7 @@
     });
   });
 </script>
+  <script src="contactform.js"></script>
 </body>
 </html>
 

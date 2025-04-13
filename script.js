@@ -28,4 +28,12 @@ document.getElementById('theme3').addEventListener('click', () => {
   document.body.classList.remove('blue-theme', 'dark-mode');
   document.body.classList.add('light-mode');
 });
+window.addEventListener('scroll', function() {
+  const scrollTopBtn = document.getElementById('scrollToTop');
+  if (document.documentElement.scrollTop > 300) {
+    scrollTopBtn.style.display = 'block';
+  } else {
+    scrollTopBtn.style.display = 'none';
+  }
+});
 

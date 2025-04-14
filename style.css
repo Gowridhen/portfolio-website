@@ -202,28 +202,75 @@ section {
 }
 
 /* Contact */
-#contact p {
-  font-size: 1.1rem;
-  text-align: center;
-}
-
-#contact .socials {
-  margin-top: 30px;
+#contactForm {
+  max-width: 600px;
+  margin: 30px auto 0;
   display: flex;
-  justify-content: center;
-  gap: 25px;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.socials a {
-  font-size: 1.8rem;
-  color: #333;
-  transition: color 0.3s ease, transform 0.3s ease;
+#contactForm input,
+#contactForm textarea {
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-.socials a:hover {
-  color: #ff5722;
-  transform: scale(1.2);
+#contactForm input:focus,
+#contactForm textarea:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
 }
+
+#contactForm textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#contactForm button {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Dark mode support */
+body.dark-mode #contactForm input,
+body.dark-mode #contactForm textarea {
+  background-color: #2e2e42;
+  border-color: #555;
+  color: #f1f1f1;
+}
+
+body.dark-mode #contactForm input::placeholder,
+body.dark-mode #contactForm textarea::placeholder {
+  color: #aaa;
+}
+
+body.dark-mode #contactForm button {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark-mode #contactForm button:hover {
+  background-color: #666;
+}
+
 
 /* Footer */
 footer {

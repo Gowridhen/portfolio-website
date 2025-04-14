@@ -476,7 +476,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 });
 /* Social Media Icons */
 .socials a {
-  font-size: 28px; /* Increase the size */
+  font-size: 30px; /* Increase the size */
   margin: 0 15px;
   transition: transform 0.3s ease-in-out;
 }

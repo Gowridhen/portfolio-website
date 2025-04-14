@@ -201,13 +201,13 @@ section {
   color: #ff5722;
 }
 
-/* Contact */
+/* Contact Form Styling */
 #contactForm {
   max-width: 600px;
-  margin: 30px auto 0;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
 
 #contactForm input,
@@ -215,17 +215,11 @@ section {
   padding: 14px 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
   transition: border 0.3s ease, box-shadow 0.3s ease;
-}
-
-#contactForm input:focus,
-#contactForm textarea:focus {
-  outline: none;
-  border-color: #007BFF;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
 }
 
 #contactForm textarea {
@@ -233,10 +227,17 @@ section {
   min-height: 120px;
 }
 
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
 #contactForm button {
-  padding: 12px 20px;
   background-color: #007BFF;
-  color: #fff;
+  color: white;
+  padding: 12px 20px;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -249,12 +250,12 @@ section {
   background-color: #0056b3;
 }
 
-/* Dark mode support */
+/* Dark Mode Support */
 body.dark-mode #contactForm input,
 body.dark-mode #contactForm textarea {
   background-color: #2e2e42;
-  border-color: #555;
   color: #f1f1f1;
+  border: 1px solid #555;
 }
 
 body.dark-mode #contactForm input::placeholder,
@@ -264,13 +265,11 @@ body.dark-mode #contactForm textarea::placeholder {
 
 body.dark-mode #contactForm button {
   background-color: #444;
-  color: #fff;
 }
 
 body.dark-mode #contactForm button:hover {
   background-color: #666;
 }
-
 
 /* Footer */
 footer {

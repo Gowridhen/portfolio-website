@@ -1,3 +1,10 @@
+.build-note {
+  margin-top: 20px;
+}
+
+body.dark-mode .build-note {
+  color: #f1f1f1;
+}
 /* General Reset */
 * {
   margin: 0;

@@ -446,4 +446,33 @@ body.dark-mode .build-section .btn:hover {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const formStatus = document.getElementById("formStatus");
+
+  // Simulate form submission
+  formStatus.className = "form-status"; // Reset class
+  formStatus.textContent = "Sending...";
+  formStatus.classList.add("show");
+
+  setTimeout(() => {
+    // Simulated response
+    const success = Math.random() > 0.3; // 70% chance success
+
+    if (success) {
+      formStatus.textContent = "Message sent successfully!";
+      formStatus.classList.add("success");
+    } else {
+      formStatus.textContent = "Something went wrong. Please try again.";
+      formStatus.classList.add("error");
+    }
+
+    // Hide after 3 seconds
+    setTimeout(() => {
+      formStatus.classList.remove("show", "success", "error");
+    }, 3000);
+  }, 1000);
+});
+
 

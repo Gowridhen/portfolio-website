@@ -474,5 +474,19 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     }, 3000);
   }, 1000);
 });
+/* Social Media Icons */
+.socials a {
+  font-size: 28px; /* Increase the size */
+  margin: 0 15px;
+  transition: transform 0.3s ease-in-out;
+}
 
+.socials a:hover {
+  transform: scale(1.2); /* Make them grow when hovered */
+}
+
+/* Optional: Add extra size for dark mode if needed */
+body.dark-mode .socials a {
+  color: #fff;
+}
 

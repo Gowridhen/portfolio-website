@@ -144,7 +144,7 @@ section {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 15px;
+  gap: 10px;
   margin-top: 30px;
   text-align: center;
 }
@@ -544,5 +544,47 @@ button:active::after,
 .btn-pulse {
   animation: pulse 2s infinite;
 }
+      .filter-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-buttons button {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(110, 142, 251, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-buttons button:hover {
+  background: linear-gradient(135deg, #a777e3, #6e8efb);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(110, 142, 251, 0.5);
+}
+
+.filter-buttons button.active {
+  background: #444;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(110, 142, 251, 0.5); }
+  70% { box-shadow: 0 0 0 15px rgba(110, 142, 251, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(110, 142, 251, 0); }
+}
+
+.filter-buttons button.active {
+  animation: pulse 2s infinite;
+}
+
 
 
